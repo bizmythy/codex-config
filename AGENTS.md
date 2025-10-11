@@ -1,3 +1,5 @@
+Below is guidance for specific tools. Ignore all sections that are irrelevant to your task at hand.
+
 ## Python
 
 Python is available to you.
@@ -18,3 +20,7 @@ Do not run python compile. To check python code, run `ruff check`.
 ## Zig
 
 I am on the latest version of the Zig compiler. Be cautious to not use things that no longer work in the standard library.
+
+## Shell Scripts
+
+Where possible, I prefer writing shell scripts using Nushell over Bash.
