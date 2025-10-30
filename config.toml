@@ -1,43 +1,19 @@
 model = "gpt-5-codex"
-model_reasoning_effort = "low"
-
-# Global default sandbox
-sandbox_mode = "workspace-write"
-
-# Options for workspace-write mode
-[sandbox_workspace_write]
-writable_roots = ["/home/drew/.cache"]
-network_access = true
-
-[projects."/home/drew/.cache"]
-trust_level = "trusted"
+model_reasoning_effort = "medium"
 
 [projects."/home/drew/dirac/buildos-web"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web2"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web1"]
 trust_level = "trusted"
 
 [projects."/home/drew/nixconf"]
 trust_level = "trusted"
 
-[projects."/home/drew/personal/pdf-ollama"]
-trust_level = "trusted"
+[tools]
+web_search = true   # allow Codex to issue first-party web searches without prompting you
+view_image = true   # let Codex attach local images (paths in your workspace) to the model request
 
-[projects."/home/drew/personal/ziglings"]
-trust_level = "trusted"
-
-[projects."/home/drew/personal/webcad"]
-trust_level = "trusted"
-
-[projects."/home/drew/personal/webcad-rs"]
-trust_level = "trusted"
-
-[projects."/home/drew/personal/substack-dl"]
-trust_level = "trusted"
-
-[projects."/home/drew/personal/apotris"]
-trust_level = "trusted"
-
-[projects."/home/drew/personal/performance-aware-hw"]
-trust_level = "trusted"
-
-[projects."/home/drew/personal/github-pr-stats"]
-trust_level = "trusted"
