@@ -13,7 +13,7 @@ trust_level = "trusted"
 [projects."/home/drew/nixconf"]
 trust_level = "trusted"
 
-[tools]
-web_search = true   # allow Codex to issue first-party web searches without prompting you
-view_image = true   # let Codex attach local images (paths in your workspace) to the model request
+[features]
+web_search_request = true   # allow Codex to issue first-party web searches without prompting you
+view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
