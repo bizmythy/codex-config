@@ -25,6 +25,11 @@ trust_level = "trusted"
 web_search_request = true   # allow Codex to issue first-party web searches without prompting you
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
+experimental_use_rmcp_client = true
+
+[mcp_servers.figma]
+url = "https://mcp.figma.com/mcp"
+
 [notice]
 hide_gpt5_1_migration_prompt = true
 
