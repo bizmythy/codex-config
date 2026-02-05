@@ -1,5 +1,7 @@
-model = "gpt-5.2-codex"
-model_reasoning_effort = "medium"
+model = "gpt-5.3-codex"
+model_reasoning_effort = "high"
+
+web_search = "live"
 
 writable_roots = ["/home/drew/.cache", "/home/drew/.local"]
 
@@ -30,7 +32,6 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [features]
-web_search_request = true   # allow Codex to issue first-party web searches without prompting you
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
 rmcp_client = true
