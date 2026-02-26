@@ -45,6 +45,21 @@ trust_level = "trusted"
 [projects."/home/drew/dirac/buildos-web-olympus"]
 trust_level = "trusted"
 
+[projects."/home/drew/personal/hyprealms"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-cypress-skill"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/shadow-realms"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-generate-ignores"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-viewer-api"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
