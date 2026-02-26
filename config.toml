@@ -7,6 +7,7 @@ sandbox_permissions=["disk-full-read-access"]
 
 [sandbox_workspace_write]
 writable_roots = ["/home/drew/.cache", "/home/drew/.local"]
+network_access = true
 
 [projects."/home/drew/dirac/buildos-web"]
 trust_level = "trusted"
@@ -41,6 +42,9 @@ trust_level = "trusted"
 [projects."/home/drew/dirac/buildos-web-remove-image-unit-tests"]
 trust_level = "trusted"
 
+[projects."/home/drew/dirac/buildos-web-olympus"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
@@ -56,4 +60,3 @@ hide_rate_limit_model_nudge = true
 
 [notice.model_migrations]
 "gpt-5.1-codex-max" = "gpt-5.2-codex"
-
