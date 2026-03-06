@@ -1,9 +1,10 @@
-model = "gpt-5.3-codex"
+model = "gpt-5.4"
 model_reasoning_effort = "medium"
 
 web_search = "live"
 
 sandbox_permissions=["disk-full-read-access"]
+plan_mode_reasoning_effort = "high"
 
 [sandbox_workspace_write]
 writable_roots = ["/home/drew/.cache", "/home/drew/.local"]
@@ -60,13 +61,40 @@ trust_level = "trusted"
 [projects."/home/drew/dirac/buildos-web-viewer-api"]
 trust_level = "trusted"
 
+[projects."/home/drew/dirac/buildos-web-olympus-rate-limit"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-pr-template"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-test-models-ingest-devex"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-task-queue-support-dashboard"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-nuke-infra-yaml"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-auth-revamp"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-cpp-subprocess-sandbox"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-dirac-bot-linear-api-key"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-fix-volume-accumulation"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/forgejo"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
 rmcp_client = true
-
-[mcp_servers.figma]
-url = "https://mcp.figma.com/mcp"
 
 [notice]
 hide_gpt5_1_migration_prompt = true
@@ -75,3 +103,6 @@ hide_rate_limit_model_nudge = true
 
 [notice.model_migrations]
 "gpt-5.1-codex-max" = "gpt-5.2-codex"
+
+[mcp_servers.linear]
+url = "https://mcp.linear.app/mcp"
