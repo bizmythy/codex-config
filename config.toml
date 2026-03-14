@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "high"
 
 web_search = "live"
 
@@ -7,7 +7,7 @@ sandbox_permissions=["disk-full-read-access"]
 plan_mode_reasoning_effort = "high"
 
 [sandbox_workspace_write]
-writable_roots = ["/home/drew/.cache", "/home/drew/.local"]
+writable_roots = ["/home/drew/.cache", "/home/drew/.local", "/home/drew/.cargo", "/home/drew/go"]
 network_access = true
 
 [projects."/home/drew/dirac/buildos-web"]
@@ -89,6 +89,30 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/home/drew/dirac/forgejo"]
+trust_level = "trusted"
+
+[projects."/home/drew/personal/babelfish"]
+trust_level = "trusted"
+
+[projects."/home/drew"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-cad-worker-admittance-tweaks"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-issue-command-fixes"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/nixos-config"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-stable-index-vector"]
+trust_level = "trusted"
+
+[projects."/home/drew/Downloads/current_allergist_statement"]
+trust_level = "trusted"
+
+[projects."/home/drew/personal/forgejo"]
 trust_level = "trusted"
 
 [features]
