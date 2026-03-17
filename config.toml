@@ -115,10 +115,17 @@ trust_level = "trusted"
 [projects."/home/drew/personal/forgejo"]
 trust_level = "trusted"
 
+[projects."/home/drew/personal/forgejo/local-dev/test-repo/test-repo"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-temp-package"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
 rmcp_client = true
+multi_agent = true
 
 [notice]
 hide_gpt5_1_migration_prompt = true
