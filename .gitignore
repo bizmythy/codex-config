@@ -4,3 +4,5 @@
 !.gitignore
 !config.toml
 !AGENTS.md
+!skills/
+!skills/**
