@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Ticket Bootstrap"
+  short_description: "Bootstrap GitHub PRs and Linear tickets"
+  default_prompt: "Use $pr-ticket-bootstrap to ensure this branch has a Linear ticket and draft PR."
