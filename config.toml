@@ -1,10 +1,14 @@
 model = "gpt-5.4"
-model_reasoning_effort = "high"
+model_reasoning_effort = "xhigh"
 
 web_search = "live"
 
 sandbox_permissions=["disk-full-read-access"]
 plan_mode_reasoning_effort = "high"
+service_tier = "fast"
+approvals_reviewer = "guardian_subagent"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
 
 [sandbox_workspace_write]
 writable_roots = ["/home/drew/.cache", "/home/drew/.local", "/home/drew/.cargo", "/home/drew/go"]
@@ -121,11 +125,24 @@ trust_level = "trusted"
 [projects."/home/drew/dirac/buildos-web-temp-package"]
 trust_level = "trusted"
 
+[projects."/home/drew/dirac/buildos-web-local-server-domain-name"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-stl-script"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-centralize-lint"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-lam-generation-failed-tickets"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
 rmcp_client = true
 multi_agent = true
+guardian_approval = true
 
 [notice]
 hide_gpt5_1_migration_prompt = true
