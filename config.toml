@@ -4,11 +4,11 @@ model_reasoning_effort = "high"
 web_search = "live"
 
 sandbox_permissions=["disk-full-read-access"]
-plan_mode_reasoning_effort = "high"
-service_tier = "fast"
+plan_mode_reasoning_effort = "xhigh"
 approvals_reviewer = "guardian_subagent"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
+service_tier = "fast"
 
 # disable codex apps stuff, causing problems
 [apps.connector_76869538009648d5b282a4bb21c3d157]
@@ -168,6 +168,27 @@ trust_level = "trusted"
 [projects."/home/drew/dirac/buildos-web-blueport-load-model"]
 trust_level = "trusted"
 
+[projects."/home/drew/dirac/buildos-web-blueport-animations"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-section-views"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-address-review-comments-skill-file"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-blueport-toggle-button"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/dirac-workspaces"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-maskfile-fzf-helper"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-workspaces-changes"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
@@ -189,3 +210,6 @@ url = "https://mcp.linear.app/mcp"
 
 [plugins."github@openai-curated"]
 enabled = true
+
+[tui]
+theme = "catppuccin-mocha"
