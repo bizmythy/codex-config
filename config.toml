@@ -18,6 +18,9 @@ enabled = false
 writable_roots = ["/home/drew/.cache", "/home/drew/.local", "/home/drew/.cargo", "/home/drew/go"]
 network_access = true
 
+[shell_environment_policy.set]
+GIT_EDITOR = "true"
+
 [projects."/home/drew/dirac/buildos-web"]
 trust_level = "trusted"
 
