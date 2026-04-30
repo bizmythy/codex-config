@@ -189,6 +189,15 @@ trust_level = "trusted"
 [projects."/home/drew/dirac/buildos-web-workspaces-changes"]
 trust_level = "trusted"
 
+[projects."/home/drew/dirac/buildos-web-blueport-measurements-api"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-cad-repository-tweaks"]
+trust_level = "trusted"
+
+[projects."/home/drew/dirac/buildos-web-fix-web-build"]
+trust_level = "trusted"
+
 [features]
 view_image_tool = true   # let Codex attach local images (paths in your workspace) to the model request
 
@@ -215,4 +224,4 @@ enabled = true
 theme = "catppuccin-mocha"
 
 [tui.model_availability_nux]
-"gpt-5.5" = 2
+"gpt-5.5" = 4
