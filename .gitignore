@@ -1,6 +1,7 @@
 *
 .*
 !*/
+/.tmp
 
 !.gitignore
 !config.toml
