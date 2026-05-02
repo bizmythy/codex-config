@@ -8,3 +8,5 @@
 !AGENTS.md
 !skills/
 !skills/**
+/skills/.system/
+/skills/.system/**
